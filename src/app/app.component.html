@@ -1,4 +1,8 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>SabrinaApp</h1>
+<a [routerLink]="['home']">HOME</a> |
+<a [routerLink]="['history']">Tabela de Registros</a> |
+{{timer.getCount()}}s
+<button (click)="timer.start(1000)">Start</button>
+<button (click)="timer.stop()">Stop</button>
+
+  <router-outlet></router-outlet>
